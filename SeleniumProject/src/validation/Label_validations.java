@@ -14,7 +14,7 @@ public class Label_validations {
         try{
             oBrowser = new ChromeDriver();
             oBrowser.manage().window().maximize();
-            oBrowser.navigate().to("file:///E:/MorningBatch_Combined/HTML/Webpage/SampleWebPage.html");
+            oBrowser.navigate().to("file:///C:/Users/Dell/Downloads/Sample%20Web%20Project.html");
             Thread.sleep(2000);
 
             //1. Exist Or not?
