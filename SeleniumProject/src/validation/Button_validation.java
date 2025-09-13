@@ -8,14 +8,14 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Button_validation {
     public static void main(String[] args) {
-            buttonValidations();
+        buttonValidations();
     }
         public static void buttonValidations(){
             WebDriver oBrowser = null;
             try{
                 oBrowser = new ChromeDriver();
                 oBrowser.manage().window().maximize();
-                oBrowser.navigate().to("file:///C:/Users/Dell/Downloads/Sample%20Web%20Project.html");
+                oBrowser.navigate().to("file:///C:/Users/Dell/Downloads/Sample%20Web%20Project.html ");
                 Thread.sleep(2000);
 
                 //1. Exist Or not?
