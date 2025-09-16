@@ -218,7 +218,7 @@ public class ReusableMethods {
  *************************/
 public static Map<String, String> getPropData(String propFileName){
     FileInputStream fin = null;
-    Properties prop = null;
+    Properties  prop = null;
     Map<String, String> objMap = null;
     try{
         objMap = new HashMap<String, String>();
