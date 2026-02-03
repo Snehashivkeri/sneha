@@ -8,8 +8,9 @@ import java.util.Set;
 
 public class LinkedinChildWindow {
     public static void main(String[] args) {
-         handleChildWindow();
+        handleChildWindow();
     }
+
     public static void handleChildWindow() {
         WebDriver oBrowser = null;
         String sParent = null;
@@ -21,12 +22,11 @@ public class LinkedinChildWindow {
             oBrowser.navigate().to("https://www.linkedin.com/login");
             Thread.sleep(2000);
 
-           // oBrowser.switchTo().frame(oBrowser.findElement(By.xpath("//iframe[@*='Sign in with Google Button']")));
+            // oBrowser.switchTo().frame(oBrowser.findElement(By.xpath("//iframe[@*='Sign in with Google Button']")));
             //oBrowser.switchTo().frame(oBrowser.findElement(By.xpath("//iframe[@*='Sign in with Apple']")));
 
             sParent = oBrowser.getWindowHandle();
             System.out.println("Parent Window ID: " + sParent);
-
 
 
             oBrowser.findElement(By.xpath("//span[@class = 'sign-in-with-apple-button__text']")).click();
@@ -55,4 +55,3 @@ public class LinkedinChildWindow {
         }
     }
 }
-
